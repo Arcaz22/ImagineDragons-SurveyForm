@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Survey Form</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <h1 id="title">Survey Form</h1>
+    <p id="description">Thank you for filling out this form</p>
+    <form id="survey-form">
+      <label for="name" id="name-label">
+        Name:
+        <input type="text" id="name" placeholder="Enter Your name" required />
+      </label>
+      <label for="email" id="email-label">
+        Email:
+        <input
+          type="email"
+          id="email"
+          placeholder="Enter Your Email"
+          required
+        />
+      </label>
+      <label for="number" id="number-label">
+        Age:
+        <input
+          type="number"
+          id="number"
+          placeholder="Enter your Age"
+          min="15"
+          max="40"
+        />
+      </label>
+      <label for="dropdown" id="dropdown">
+        How do you know Imagine Dragons?
+        <select id="dropdown-label">
+          <option>Listening on music</option>
+          <option>On the website</option>
+          <option>Told by a friend</option>
+        </select>
+      </label>
+      <label for="recommend" id="recommend-label">
+        Would you recommend freeCodeCamp to a friend? <br />
+        <input type="radio" name="recommend" value="definitely" checked />
+        Definitely <input type="radio" name="recommend" value="maybe" /> Maybe
+        <input type="radio" name="recommend" value="not-sure" /> Not sure
+      </label>
+      <label for="recommend" id="recommend-label">
+        What song do you listen to the most? <br />
+        <input type="checkbox" value="enemy" checked /> Enemy
+        <input type="checkbox" value="bad-Liar" /> Bad Liar
+        <input type="checkbox" value="demons" /> Demons
+      </label>
+      <label for="comments" id="comments-label">
+        Any suggestions for the future?
+        <textarea
+          name="comments"
+          id="comments"
+          cols="30"
+          rows="10"
+          style="height: 100px"
+        ></textarea>
+      </label>
+      <button type="submit" id="submit">Submit</button>
+    </form>
+
+    <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
+  </body>
+</html>
